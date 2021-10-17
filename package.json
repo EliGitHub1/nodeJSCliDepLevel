@@ -1,0 +1,23 @@
+{
+  "name": "dlevel",
+  "version": "1.0.0",
+  "description": "CLI that will identify all NPM dependencies at a given level",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EliGitHub1/nodeJSCliDepLevel.git"
+  },
+  "keywords": [
+    "cli",
+    "nodeJS"
+  ],
+  "author": "Eli A",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EliGitHub1/nodeJSCliDepLevel/issues"
+  },
+  "homepage": "https://github.com/EliGitHub1/nodeJSCliDepLevel#readme"
+}
