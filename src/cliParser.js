@@ -52,12 +52,12 @@ const validatePathInput =async path=>{
   const validateLevelInput = levelInput=>{     
     switch (true) {
       case levelInput===undefined:                
-        console.info('%s level is set to: all the root package dependencies , see --help', chalk.yellow.bold('INFO'));
+        console.info('%s level is set to: all the root package dependencies', chalk.yellow.bold('INFO'));
         return PRINT_ALL;
       case typeof(levelInput)!=='number':
       case isNaN(levelInput):
       case levelInput<0:
-        console.error('%s Did not enter valid --level input, see --help ', chalk.red.bold('ERROR'));
+        console.error('%s Did not enter valid --level input', chalk.red.bold('ERROR'));
         process.exit(1)      
       default:
         return levelInput
@@ -72,7 +72,7 @@ const validatePathInput =async path=>{
           parser.printLevelDependencies()
           return resolve('Finished parsing all levels')          
         case levelInput>Object.keys(level).length:          
-          console.info('%s --level input is bigger than max, see --help', chalk.yellow.bold('INFO'));
+          console.info('%s --level input is bigger than max', chalk.yellow.bold('INFO'));
           return resolve('Finished without parsing')                          
         case levelInput===0:
           console.log(`Level 0: `+(level[0])[0].name+`@`+(level[0])[0].version)
@@ -97,7 +97,7 @@ const validatePathInput =async path=>{
       
       let validPathRes = await validatePathInput(options.path)            
       if (!validPathRes){
-        console.error('%s No accessable package-lock.json file found, see --help', chalk.red.bold('ERROR'));
+        console.error('%s No accessable package-lock.json file found', chalk.red.bold('ERROR'));
         process.exit(1)
       }else{
         console.info('%s Accessable package-lock.json file found', chalk.yellow.bold('INFO'));
@@ -105,7 +105,7 @@ const validatePathInput =async path=>{
 
       let resPackagesProp = await isPackagesPropExist(options.path)                    
       if (!resPackagesProp){
-        console.info('%s No packages property found in package-lock.json  , see --help', chalk.yellow.bold('INFO'));
+        console.info('%s No packages property found in package-lock.json', chalk.yellow.bold('INFO'));
         process.exit(1)
       }
               
