@@ -25,7 +25,7 @@ Example 1:
 2. cd nodeJSCliDepLevel/
 3. run the following 
 
-        dlevel --path [relative or absoulut package-lock.json file location on your file system] --level [integer to specify which level do you want to print]
+       dlevel --path [relative or absoulut package-lock.json file location on your file system] --level [integer to specify which level do you want to print]
     
 
 for example:  
