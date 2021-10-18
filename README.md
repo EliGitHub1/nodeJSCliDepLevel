@@ -6,9 +6,9 @@ CLI that will identify all NPM dependencies at a given level
 Installation 
 ___________________
 1. git clone this repository
-2. install update node runtime, you can find more information here: https://nodejs.org/en/
+2. install / update nodeJS runtime, you can find more information here: https://nodejs.org/en/
 3. open git bash/cmd/or any integrated command line
-4. go to nodeJSCliDepLevel 
+4. cd nodeJSCliDepLevel 
 5. npm install
 6. npm i esm
 7. npm install arg
@@ -22,7 +22,9 @@ __________________
 
        dlevel                command-line utility
        --path                relative/absoulth path of file to parse
+       -p                    same as --path      
        --level               n 
+       -l                    same as --level   
        n = 0                 print the rood depdency
        n > maxDepth          result in Error          
        n<0                   result in Error          
