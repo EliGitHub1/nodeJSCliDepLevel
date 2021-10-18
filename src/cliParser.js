@@ -4,7 +4,7 @@ import chalk from 'chalk';
 import fs from 'fs'
 import {printSpesificLevelDependencies} from './cliPrinter'
 
-const parser = require('../../HomeAssignment/dependency_parser')
+const parser = require('../HomeAssignment/dependency_parser')
 const PRINT_ALL = -1
 
  const parseArgsIntoOptions=(rawArgs)=>{  
