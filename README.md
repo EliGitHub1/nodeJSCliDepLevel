@@ -15,6 +15,24 @@ ___________________
 8. npm install inquirer
 
 
+
+Flags/args/keywords
+__________________
+       key/arg               description
+
+       dlevel                command-line utility
+       --path                relative/absoulth path of file to parse
+       --level               n 
+       n = 0                 print the rood depdency
+       n > maxDepth          result in Error          
+       n<0                   result in Error          
+       0<n<maxDepth          print spesific level
+       n = not a number      result in Error
+       --path missing        look for packge-lock.json file in current directory
+       --level missing       print all the root package dependencies 
+       
+              
+
 Examples\use cases
 ___________________
 The command-line utility name is “dlevel"
