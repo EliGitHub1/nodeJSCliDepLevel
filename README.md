@@ -95,12 +95,15 @@ result:
  explanation:
  not speifying a level reslut in printint the all root package dependencies
  
+ Future relases:
+ _______________
  
-
-
-
-
-
-
-
-
+ Clean code 
+ Add tests
+ Add ability to require  from https://www.npmjs.com
+ 
+ Authour 
+ ________
+ 
+ Name: Eli A
+ Email Address: sendanemailtoeli@gmail.com
