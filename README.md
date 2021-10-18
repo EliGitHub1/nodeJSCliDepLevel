@@ -28,8 +28,9 @@ __________________
        n<0                   result in Error          
        0<n<maxDepth          print spesific level
        n = not a number      result in Error
-       --path missing        look for packge-lock.json file in current directory
-       --level missing       print all the root package dependencies 
+       --path (missing)      look for packge-lock.json file in current directory
+       --level (missing)     print all the root package dependencies 
+       --path (wrong input)  result in Error
        
               
 
