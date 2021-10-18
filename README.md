@@ -100,8 +100,10 @@ result:
  Future relases:
  _______________
  
- Clean code 
+ Clean code
+ 
  Add tests
+ 
  Add ability to require  from https://www.npmjs.com
  
  Authour 
